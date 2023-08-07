@@ -1,0 +1,27 @@
+{
+  "name": "dumlping-haven",
+  "version": "1.0.0",
+  "description": "restaurant page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codetwentyfive/dumlping-haven.git"
+  },
+  "keywords": [
+    "resturant",
+    "dumplings"
+  ],
+  "author": "codetwentyfive",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codetwentyfive/dumlping-haven/issues"
+  },
+  "homepage": "https://github.com/codetwentyfive/dumlping-haven#readme",
+  "devDependencies": {
+    "cli": "^1.0.1",
+    "webpack": "^5.88.2"
+  }
+}
