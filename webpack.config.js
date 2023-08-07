@@ -1,6 +1,6 @@
 const path = require('path');
 //const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     mode: 'development',
     entry:'./src/index.js', // entry point,can be multiple too i.e "Code Splitting"
@@ -16,12 +16,12 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
-        clean: true,
+        
 
     },
 
     optimization: {
-        runtimeChunk: 'single',
+       // runtimeChunk: 'single',
     },
 
     module: {
@@ -58,9 +58,7 @@ module.exports = {
 
     plugins: [
         //new BundleAnalyzerPlugin()
-        new HtmlWebpackPlugin({
-            title: 'Development',
-        }),
+        
     ],
 
 
