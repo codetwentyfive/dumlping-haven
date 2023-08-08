@@ -1,0 +1,122 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a background color and style to the header */
+header {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Style the content section */
+.content {
+  padding: 40px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.menu-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  font-size: 16px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info h3,
+.social-media h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info p,
+.social-media a {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .menu-items {
+    margin-top: 20px;
+  }
+
+  .menu-item {
+    width: calc(50% - 40px);
+  }
+}
