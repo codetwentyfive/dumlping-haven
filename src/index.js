@@ -1,3 +1,5 @@
 import './styles.css';
-console.log("Hello World");
-alert("Let's Gooooo!");
+import { performInitialLoad } from './homepage';
+
+
+performInitialLoad();
