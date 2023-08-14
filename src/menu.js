@@ -11,7 +11,8 @@ export
     ];
 
     const menuHtml = `
-        <h1>Dumpling Assortment Menu</h1>
+        <h1 >Dumpling Assortment Menu</h1>
+        <div class="menu-items">
         ${dumplings.map(item => `
           <div class="menu-item">
             <img src="${item.image}" alt="${item.name}" />
@@ -20,8 +21,9 @@ export
               <p>Price: $${item.price.toFixed(2)}</p>
             </div>
           </div>
+          
         `).join('')}
-      `;
+      </div>`;
 
     menuContent.innerHTML = menuHtml;
 }
