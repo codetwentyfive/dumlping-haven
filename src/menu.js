@@ -1,58 +1,30 @@
 // Function to populate menu content
-export function menu() {
-    const menuSections = [
-        {
-            title: 'Beverages',
-            items: [
-                { name: 'Green Tea', description: 'A soothing and refreshing green tea.', price: 2.5, image: 'green-tea.jpg' },
-                // Add more beverage items here
-            ]
-        },
-        {
-            title: 'Food',
-            items: [
-                { name: 'Classic Dumplings', description: 'Our signature dumplings filled with a delicious blend of flavors.', price: 4.0, image: 'classic-dumplings.jpg' },
-                // Add more food items here
-            ]
-        },
-        {
-            title: 'Extras',
-            items: [
-                { name: 'Edamame', description: 'A delightful appetizer of steamed edamame beans.', price: 3.5, image: 'edamame.jpg' },
-                // Add more extras items here
-            ]
-        }
+export
+    function menu() {
+    const menuContent = document.getElementById("content");
+
+    const dumplings = [
+        { name: "Classic Pork Dumplings", price: 8.99, image: "pork_dumplings.jpg" },
+        { name: "Vegetable Potstickers", price: 7.49, image: "vegetable_potstickers.jpg" },
+        { name: "Shrimp and Chive Dumplings", price: 9.99, image: "shrimp_dumplings.jpg" },
+        { name: "Spicy Tofu Dumplings", price: 6.99, image: "tofu_dumplings.jpg" }
     ];
-    const menuContent = document.getElementById('menu-content')
-    // Clear any existing content
-    menuContent.innerHTML = '';
 
-    // Create and append sections and items
-    menuSections.forEach(section => {
-        const sectionDiv = document.createElement('div');
-        sectionDiv.classList.add('menu-section');
+    const menuHtml = `
+        <h1>Dumpling Assortment Menu</h1>
+        ${dumplings.map(item => `
+          <div class="menu-item">
+            <img src="${item.image}" alt="${item.name}" />
+            <div>
+              <h2>${item.name}</h2>
+              <p>Price: $${item.price.toFixed(2)}</p>
+            </div>
+          </div>
+        `).join('')}
+      `;
 
-        const sectionTitle = document.createElement('h3');
-        sectionTitle.textContent = section.title;
-
-        sectionDiv.appendChild(sectionTitle);
-
-        section.items.forEach(item => {
-            const menuItem = createMenuItem(item.name, item.description, item.price, item.image);
-            sectionDiv.appendChild(menuItem);
-        });
-
-        menuContent.appendChild(sectionDiv);
-    });
-
-
+    menuContent.innerHTML = menuHtml;
 }
-// Function to create a menu item element
-export function createMenuItem(name, description, price, imageSrc) {
-    const menuItem = document.createElement('div');
-    menuItem.classList.add('menu-item');
 
-    // ... (rest of the code to create and append content)
+menu(); // Call the menu function to populate the content div.
 
-    return menuItem;
-}
