@@ -1,6 +1,6 @@
 export function contact() {
 
-    const contactContent = document.getElementById('contact-content');
+    const contactContent = document.getElementById('content');
     contactContent.innerHTML = ''; // Clear any existing content
 
     const contactDiv = document.createElement('div');
