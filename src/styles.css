@@ -29,12 +29,23 @@ nav ul li a {
   font-weight: bold;
 }
 
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
 /* Style the content section */
-.content {
-  padding: 40px;
+#content {
   text-align: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+}
+
+.homepage-div > *{
+  margin:20px 0;
 }
 
 .content h1 {
@@ -45,8 +56,9 @@ nav ul li a {
 .menu-items {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+
 }
 
 .menu-item {
@@ -72,14 +84,22 @@ nav ul li a {
   font-size: 16px;
 }
 
+/* Style the contact tab */
+
+.contact-div{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
 /* Style the footer */
 footer {
   color: #000000;
   padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-end;
 
 }
 
