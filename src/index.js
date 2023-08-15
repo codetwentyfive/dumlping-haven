@@ -2,6 +2,9 @@ import './styles.css';
 import { homepage } from './homepage';
 import { menu } from './menu';
 import { contact } from './contact';
+import Savory from './savory_dumplings.png';
+
+
 
 
 // Get references to the tabs
@@ -50,4 +53,3 @@ function clearActiveTabs() {
     homeTab.classList.remove('active');
 }
 
-homepage();
