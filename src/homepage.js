@@ -1,13 +1,13 @@
+import Savory from './savory_dumplings.png';
+
 
 export function homepage() {
   const homepageContent = document.querySelector('#content');
 
 
   //create content for homepage
-  const homepageHtml = document.createElement('div');
-  homepageHtml.classList.add('homepage-div')
-  homepageHtml.innerHTML = `
-
+  const homepageHtml = `
+<div class="homepage-div">
    <div class="title">
     <h1>Welcome to Dumpling Delights</h1>
     <p>Where Every Bite is a Delightful Surprise!</p>
@@ -16,8 +16,8 @@ export function homepage() {
   <section class="menu">
     <h2>Our Delectable Dumplings</h2>
     <div class="dumpling">
-      <img src="dumpling-image.jpg" alt="Savory Dumplings">
-      <h3>Savory Delight</h3>
+      <img src="${Savory}" alt="Savory Dumplings">
+      <h3>Savory Delight 😋</h3>
       <p>Our classic dumplings filled with a savory medley of flavors that will tickle your taste buds.</p>
     </div>
     <!-- Repeat the "dumpling" section for other menu items -->
@@ -28,7 +28,7 @@ export function homepage() {
     <p>Join us for a dumpling adventure you won't forget!</p>
     <button>Reserve a Table</button>
   </section>
-   `
+ </div>`
 
 
 
@@ -42,7 +42,6 @@ export function homepage() {
   */
 
 
-  homepageContent.appendChild(homepageHtml);
+  homepageContent.innerHTML = homepageHtml;
 
 }
-homepage();
