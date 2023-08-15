@@ -1,13 +1,21 @@
+import Pork from './pork_dumplings.png';
+import Vegetable from './vegetable_potstickers.png';
+import Shrimp from './shrimp_dumplings.png';
+import Spicy from './tofu_dumplings.png';
+
+
+
+
 // Function to populate menu content
 export
     function menu() {
     const menuContent = document.getElementById("content");
 
     const dumplings = [
-        { name: "Classic Pork Dumplings", price: 8.99, image: "pork_dumplings.jpg" },
-        { name: "Vegetable Potstickers", price: 7.49, image: "vegetable_potstickers.jpg" },
-        { name: "Shrimp and Chive Dumplings", price: 9.99, image: "shrimp_dumplings.jpg" },
-        { name: "Spicy Tofu Dumplings", price: 6.99, image: "tofu_dumplings.jpg" }
+        { name: "Classic Pork Dumplings", price: 8.99, image: Pork },
+        { name: "Vegetable Potstickers", price: 7.49, image: Vegetable },
+        { name: "Shrimp and Chive Dumplings", price: 9.99, image: Shrimp },
+        { name: "Spicy Tofu Dumplings", price: 6.99, image: Spicy }
     ];
 
     const menuHtml = `
@@ -28,5 +36,5 @@ export
     menuContent.innerHTML = menuHtml;
 }
 
-menu(); // Call the menu function to populate the content div.
+
 
