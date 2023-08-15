@@ -8,6 +8,7 @@ export function contact() {
 
     const contactHeading = document.createElement('h2');
     contactHeading.textContent = 'Contact Us';
+    contactHeading.classList.add('contact-title')
 
     const address = document.createElement('p');
     address.textContent = '123 Dumpling Street';
