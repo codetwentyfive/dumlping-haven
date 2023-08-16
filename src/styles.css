@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 
 /* Apply a background color and style to the header */
@@ -35,25 +35,25 @@ nav ul li a {
   font-weight: bold;
 }
 
-h1, .contact-title{
+h1,
+.contact-title {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px 0 0 0;
   font-size: 3.5em;
   text-shadow: 2px 2px 3px #aaa;
-  
-
 }
 
-h1,h2,h3 {
-  font-family: 'Tangerine', serif;
-  
+h1,
+h2,
+h3 {
+  font-family: "Tangerine", serif;
 }
-h2{
+h2 {
   font-size: 2.5em;
 }
-h3  {
+h3 {
   font-size: 2.5em;
 }
 
@@ -70,8 +70,14 @@ h3  {
   margin: 20px 0;
 }
 
-.content h1 {
+.homepage-pic {
+  width: calc(80% - 40px);
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
 
+.content h1 {
   font-size: 36px;
   margin-bottom: 20px;
 }
@@ -83,7 +89,8 @@ h3  {
   flex-direction: column;
 }
 
-.menu-item ,.menu{
+.menu-item,
+.menu {
   padding: 20px;
   margin: 20px;
   border: 1px solid #ddd;
@@ -157,7 +164,10 @@ footer {
   nav ul li {
     margin: 10px 0;
   }
-
+  .homepage-div {
+    width: 100vw;
+    height: auto;
+  }
   .menu-items {
     margin-top: 20px;
     flex-direction: column;
@@ -165,7 +175,7 @@ footer {
   }
 
   .menu-item {
-    width: calc(50% - 40px);
+    width: calc(80% - 40px);
   }
   .footer {
     font-size: smaller;

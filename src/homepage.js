@@ -16,7 +16,7 @@ export function homepage() {
   <section class="menu">
     <h2>Our Delectable Dumplings</h2>
     <div class="dumpling">
-      <img src="${Savory}" alt="Savory Dumplings">
+      <img class ="homepage-pic" src="${Savory}" alt="Savory Dumplings">
       <h3>Savory Delight 😋</h3>
       <p>Our classic dumplings filled with a savory medley of flavors that will tickle your taste buds.</p>
     </div>
