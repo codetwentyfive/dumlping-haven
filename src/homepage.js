@@ -26,7 +26,7 @@ export function homepage() {
   <section class="reservation">
     <h2>Book Your Dumpling Delight</h2>
     <p>Join us for a dumpling adventure you won't forget!</p>
-    <button>Reserve a Table</button>
+    <button style="margin-top:10px;" onclick="window.location.href='https://preview.redd.it/s938fg27pnn11.jpg?width=640&crop=smart&auto=webp&s=b38fdbc2c61610cf2ba406430d61ac4bea0a4014';">Reserve a Table</button>
   </section>
  </div>`
 
