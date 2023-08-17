@@ -106,12 +106,17 @@ h3 {
 }
 
 .menu-item h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
-.menu-item p {
-  font-size: 16px;
+.menu-description {
+  height: auto;
+  text-align: start;
+  font-family: "Tangerine";
+  font-size: 2em;
+  margin-top: 10px;
+  font-weight: 900;
 }
 
 /* Style the contact tab */
