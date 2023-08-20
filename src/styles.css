@@ -15,8 +15,14 @@ header {
   border-color: olive;
   border: 1px solid #ddd;
   font-weight: bolder;
+  max-height: 10vh;
 }
 
+.icon {
+  width: 100px;
+  height: 100px;
+
+}
 /* Style the navigation menu */
 nav ul {
   list-style: none;
@@ -162,7 +168,7 @@ footer {
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
-  nav ul {
+  header {
     flex-direction: column;
   }
 
