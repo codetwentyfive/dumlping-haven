@@ -8,10 +8,9 @@
 
 /* Apply a background color and style to the header */
 .header {
-  display: grid;
-  grid-template-columns: 33vw 33vw 33vw;
-  grid-template-rows: auto;
-  grid-template-areas: "icon nav";
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f8f8f8;
   font-family: "Cherry Bomb One";
   font-size: large;
@@ -23,8 +22,11 @@
 }
 
 .icon {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
+  padding-top: 2px;
+
+  
 
 }
 /* Style the navigation menu */
@@ -170,11 +172,13 @@ footer {
 /* Media queries for responsive design */
 @media (max-width: 768px) {
   header {
+    display: flex;
     flex-direction: column;
+
   }
 
   nav ul li {
-    margin: 10px 0;
+    margin: 10px 10px;
   }
   .homepage-div {
     width: 100vw;
