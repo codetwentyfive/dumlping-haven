@@ -1,2 +1,3 @@
 # dumlping-haven
-a restaurant page using webpack asset-bundler 
+A restaurant page where i practiced the use of the webpack asset-bundler and 
+image generation for the menu using the latent text to image model 'Stable Diffusion'. 
