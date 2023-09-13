@@ -43,6 +43,11 @@ nav ul li {
 
 }
 
+nav ul li:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  color: burlywood;
+}
 
 h1,
 .contact-title {
